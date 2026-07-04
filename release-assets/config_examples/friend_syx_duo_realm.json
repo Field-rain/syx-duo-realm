@@ -1,0 +1,11 @@
+{
+  "serverUrl": "http://100.x.y.z:8787/api/state",
+  "playerName": "friend",
+  "roomCode": "duo-test",
+  "syncIntervalSeconds": 30,
+  "tradeOfferResourceKey": "FISH",
+  "tradeOfferAmount": 25,
+  "tradeOfferToPlayer": "",
+  "mirrorNativeDiplomacy": true,
+  "nativePeaceStance": "TRADE"
+}

@@ -1,0 +1,53 @@
+Syx Duo Realm 是一个 Songs of Syx V71 的双人异步宏观联机 Mod 原型。
+
+它不是实时同步城市内部模拟。每个玩家仍然单独经营自己的城市，Mod 会定期导出城市状态并同步到一个本地/LAN/远程测试服务器。好友会以一个原生 NPC 势力壳出现在你的世界地图里，用于查看、贸易、战争请求和和平请求。
+
+当前版本：0.3.1 / V71
+
+主要功能：
+- 每 30 秒导出并上传城市状态
+- 房间状态检查：D OK / R OK / R OLD
+- 好友影子 NPC 势力：SHD ON / SHD OLD
+- 好友人口、主种族、资源投影到原生 NPC 数据
+- 服务器 WAR/PEACE 关系映射到本地原生 NPC 外交立场
+- 游戏内切换发送贸易的资源和数量
+- 异步贸易发送和领取
+- 战争请求、接受、服务器结算战报
+- 战争奖励通过贸易包领取
+- 和平请求
+- 服务器 stale-state guard，防止用过期状态结算战争
+
+重要说明：
+- 这是 playtest 版本，请优先使用测试存档。
+- SHD 影子 NPC 会通过游戏原生 faction API 改动一个世界区域。
+- 战争目前不会直接改城市、军队、领土或资源。
+- Workshop 只负责分发 Mod；联机仍需要双方连接到同一个 HTTP 测试服务器。
+- 推荐用 Tailscale 让两台电脑进入同一个私有虚拟局域网。
+
+快速使用：
+1. 订阅并启用 Mod。
+2. 第一次加载后编辑配置：
+   %APPDATA%\songsofsyx\saves\profile\Syx Duo Realm\syx_duo_realm.json
+3. 两个玩家设置相同 roomCode、不同 playerName、相同 serverUrl。
+4. 主机运行测试服务器。
+5. 进游戏后展开 DUO >，等待 D OK 和 R OK。
+6. 用 RES 和 AMT 选择发送贸易的资源和数量。
+7. 点击 SHD 创建好友影子 NPC。
+
+服务器脚本和详细教程：
+当前 Workshop 项只包含游戏 Mod。测试服务器和完整说明请使用作者提供的 release 包，或从项目仓库复制 tools/syx-duo-test-server/server.js。
+
+推荐远程测试：
+主机运行：
+$env:HOST = "0.0.0.0"
+node .\server.js
+
+双方 serverUrl 示例：
+http://100.x.y.z:8787/api/state
+
+已知限制：
+- 只支持一个好友。
+- 不是 Steam 好友一键联机。
+- 不做实时城市内同步。
+- 本地会镜像影子 NPC 外交立场，但玩家战争战报仍以测试服务器为准。
+- 游戏版本更新后可能需要重新适配。

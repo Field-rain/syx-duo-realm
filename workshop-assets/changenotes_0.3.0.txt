@@ -1,0 +1,9 @@
+0.3.0 trade and setup usability update
+
+- Added RES button to cycle outgoing trade resource in game.
+- Added AMT button to cycle outgoing trade amount: 25, 50, 100, 250, 500, 1000.
+- RES prefers resources with reservable stock and saves the selected resource to syx_duo_realm.json.
+- AMT saves the selected amount to syx_duo_realm.json.
+- Added one-click configuration scripts for Tailscale/LAN test servers.
+- Added one-click server start script for the current host.
+- Kept async trade claim, shadow NPC projection, room freshness, war requests, peace requests, and stale-state guard behavior unchanged.

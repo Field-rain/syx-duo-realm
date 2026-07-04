@@ -1,0 +1,11 @@
+{
+  "serverUrl": "http://localhost:8787/api/state",
+  "playerName": "host",
+  "roomCode": "duo-test",
+  "syncIntervalSeconds": 30,
+  "tradeOfferResourceKey": "FISH",
+  "tradeOfferAmount": 25,
+  "tradeOfferToPlayer": "",
+  "mirrorNativeDiplomacy": true,
+  "nativePeaceStance": "TRADE"
+}

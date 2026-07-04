@@ -1,0 +1,45 @@
+Syx Duo Realm is a Songs of Syx V71 Java mod prototype for duo asynchronous macro multiplayer.
+
+It does not synchronize the internal city simulation in real time. Each player keeps playing their own city locally. The mod exports city state snapshots to a local/LAN/remote test server, then projects one friend into your world as a native NPC faction shell for inspection, trade, war requests, and peace requests.
+
+Version: 0.3.1 / V71
+
+Features:
+- 30-second city-state export and HTTP sync
+- Room readiness checks: D OK / R OK / R OLD
+- Friend shadow NPC faction: SHD ON / SHD OLD
+- Friend population, dominant race, and resources projected into native NPC data
+- Server WAR/PEACE relation mirrored into the local native NPC diplomacy stance
+- In-game outgoing trade resource and amount controls
+- Async trade send and claim
+- War requests, acceptance, server-side battle reports
+- War spoils through the already-tested trade inbox path
+- Peace requests
+- Server stale-state guard to prevent resolving wars from old snapshots
+
+Important:
+- This is a playtest build. Use a disposable save first.
+- SHD shadow mode changes one world region through original game faction APIs.
+- War reports currently do not directly alter cities, armies, regions, or stockpiles.
+- Steam Workshop only distributes the game mod. Multiplayer still requires both clients to reach the same HTTP test server.
+- Tailscale is the recommended remote test method.
+
+Quick start:
+1. Subscribe and enable the mod.
+2. After first load, edit:
+   %APPDATA%\songsofsyx\saves\profile\Syx Duo Realm\syx_duo_realm.json
+3. Both players use the same roomCode, different playerName values, and the same serverUrl.
+4. Host the test server.
+5. In game, expand DUO > and wait for D OK and R OK.
+6. Use RES and AMT to choose outgoing trade resource and amount.
+7. Click SHD to create the friend NPC shell.
+
+Server and full instructions:
+This Workshop item contains the game mod only. Use the separate release package or project repository for tools/syx-duo-test-server/server.js and the setup guide.
+
+Known limitations:
+- One friend only.
+- No Steam friend invite integration yet.
+- No real-time city simulation sync.
+- Native diplomacy is mirrored for the shadow NPC, but the test server remains the source of truth for player-vs-player war reports.
+- Game updates may require a compatibility update.

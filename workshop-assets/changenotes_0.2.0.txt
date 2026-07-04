@@ -1,0 +1,10 @@
+0.2.0 first public playtest staging
+
+- Bumped mod sync version to 0.2.0.
+- Added room-status de-duplication by playerName on the server, so repeated saves from the same player no longer count as multiple players.
+- friend_state now picks the latest uploaded friend state instead of an older stale save from the same room.
+- Added SHD OLD label when the bound friend state is stale.
+- Clarified in-game trade selection hover text.
+- Kept stale-state guard for war resolution.
+- Prepared Workshop metadata, description, upload checklist, preview image, and playtest package workflow.
+

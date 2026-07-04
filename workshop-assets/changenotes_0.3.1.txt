@@ -1,0 +1,8 @@
+0.3.1 native diplomacy shadow polish
+
+- Added optional native diplomacy mirroring for the friend shadow NPC.
+- Server WAR now mirrors to the local native WAR stance for the shadow faction.
+- Server PEACE mirrors to the configured native peace stance, default TRADE.
+- Added mirrorNativeDiplomacy and nativePeaceStance config keys.
+- SHD hover now shows server relation, local native stance, and last mirrored state.
+- Kept the test server as the source of truth for async player-vs-player war reports.

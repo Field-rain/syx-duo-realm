@@ -1,0 +1,7 @@
+VERSION: "0.3.1",
+GAME_VERSION_MAJOR: 71,
+GAME_VERSION_MINOR: 40,
+NAME: "Syx Duo Realm",
+DESC: "Exports, syncs, shows collapsible room/trade/war controls, cycles outgoing trade resource/amount, deducts/sends/claims async trades, stores non-destructive war reports, persists test-server state, adds solo dev test endpoints, and projects a friend into an auto-refreshed NPC shell with native diplomacy mirroring for a duo macro realm.",
+AUTHOR: "syx_mod_demo",
+INFO: "Phase 1 local export, Phase 2 local/LAN HTTP sync plus collapsible room/trade/war controls, Phase 3 async trade send/claim with in-game RES/AMT controls, local send ledger, and HTTP-failure refund, Phase 4 one-friend NPC shell projection with background refresh and native DIP relation mirroring, Phase 5 non-destructive async war reports with stale-state guard, persistent test-server state, and solo dev endpoints for no-friend verification.",

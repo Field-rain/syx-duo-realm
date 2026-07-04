@@ -1,0 +1,37 @@
+# Build output
+target/
+release/
+*.zip
+*.jar
+
+# Local reference/source dumps used during reverse engineering
+.codex_refs/
+.codex_source/
+.codex-jdk/
+.tmp-syx-duo-war-test/
+
+# Local server state and smoke-test data
+tools/syx-duo-test-server/*_state.json
+tools/syx-duo-test-server/server-data/
+received_state.json
+rooms_state.json
+trades_state.json
+wars_state.json
+war_requests_state.json
+peace_requests_state.json
+diplomacy_state.json
+
+# SteamCMD cache/user data. Keep only the upload scripts in workshop/steamcmd-upload.
+workshop/steamcmd-upload/steamcmd/
+workshop/steamcmd-upload/*.vdf
+
+# Local app/game config
+syx_duo_realm.json
+claimed_trades.json
+sent_trades.json
+shadow_binding.json
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
