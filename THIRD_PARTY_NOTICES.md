@@ -1,6 +1,20 @@
+# Third-Party Notices
+
+Syx Duo Realm is an original experimental Songs of Syx mod, but its project
+structure and some mod lifecycle ideas were developed with reference to these
+MIT-licensed community projects by 4rg0n:
+
+- songs-of-syx-mod-example
+  https://github.com/4rg0n/songs-of-syx-mod-example
+- songs-of-syx-mod-more-options
+  https://github.com/4rg0n/songs-of-syx-mod-more-options
+
+Both referenced projects use the MIT License:
+
+```text
 MIT License
 
-Copyright (c) 2026 Syx Duo Realm contributors
+Copyright (c) 2023 4rg0n
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,7 +33,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-This project also includes implementation ideas and structure derived from
-MIT-licensed Songs of Syx mod examples by 4rg0n. See
-THIRD_PARTY_NOTICES.md for the original project links and notices.
+```

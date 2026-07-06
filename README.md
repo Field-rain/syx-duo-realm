@@ -30,6 +30,7 @@ the game's faction APIs, and includes a manual cleanup button.
 - Game target: Songs of Syx `V71`
 - Distribution: Steam Workshop for players, GitHub for source and server tools
 - License: MIT
+- Third-party notices: see `THIRD_PARTY_NOTICES.md`
 - Networking model: HTTP server over localhost/LAN/Tailscale
 - Steam friend invite / Steam P2P: not implemented
 
