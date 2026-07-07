@@ -487,6 +487,15 @@ node .\tools\syx-duo-test-server\server.js
 
 ## First-Version Startup Checklist
 
+For the simplified release package, the easiest path is:
+
+```text
+Host:   run HOST_START.bat, then send the printed SYXDUO join code.
+Friend: run FRIEND_JOIN.bat, paste the join code, then start the game.
+```
+
+See `release-assets/QUICK_START.md` for the short player-facing flow.
+
 For a normal local/LAN test:
 
 1. Start the server before launching or loading the save.
